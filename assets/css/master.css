@@ -3,26 +3,100 @@
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  font-family: 'PT Serif', serif;
 }
+
+/* UTILITY */
+
+
+/* UTILITY */
+
+/* SIDEBAR */
+
 
 .sidebar{
   position: fixed;
   z-index: 1;
-  background-color: blue;
+  background-color: #000;
   height: 100vh;
-  width: 50px;
 }
 
-.prova{
+.fa-spotify{
+  font-size: 35px;
+  color: #FFF;
+  padding: 0 10px;
+}
+
+.brand{
+  height: 50px;
+  color: #FFF;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.brand span{
+  font-size: 25px;
+  display: none;
+}
+
+.fa-home{
+  content: '\f015';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #808080;
+  padding: 0 10px;
+}
+
+.fa-search{
+  content: '\f002';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  font-size: 30px;
+  color: #808080;
+  padding: 0 10px;
+}
+
+.fa-book-open{
+  content: '\f518';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #808080;
+  padding: 0 10px;
+}
+
+.icons-sidebar{
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-sidebar a{
+  color: #808080;
+  font-size: 16px;
+  font-weight: bold;
+  display: none;
+}
+
+.menu-sidebar{
+  display: flex;
+  margin: 10px 0;
+}
+
+.playlist{
+  display: none;
+}
+
+/* SIDEBAR */
+
+.main-page{
   background-color: lightblue;
   width:100%;
   height: calc(100vh - 80px);
   overflow-y: scroll;
 }
 
-p{
-  margin-left: 50px;
-}
+
 
 .player-bar{
   position: fixed;
@@ -31,4 +105,73 @@ p{
   height: 80px;
   width: 100%;
   bottom: 0;
+}
+
+@media all and (min-width:768px){
+
+  .fa-spotify{
+    font-size: 45px;
+  }
+
+  .brand{
+    padding-bottom: 60px;
+  }
+
+  .brand span{
+    display:inline-block;
+    font-size: 31px;
+    padding-right: 60px;
+  }
+
+  .icons-sidebar a{
+    display: inline-block;
+  }
+
+  .icons-sidebar{
+    padding-right: 30px;
+  }
+
+  .playlist{
+    display: inline-block;
+    padding-left: 20px;
+  }
+
+  .playlist ul li{
+    font-size: 16px;
+    /* color: #7a8592; */
+    margin: 10px 0;
+    color: #808080;
+  }
+
+  .fa-spotify{
+    padding: 0 20px;
+  }
+  .fa-home{
+    padding: 0 20px;
+  }
+  .fa-search{
+    padding: 0 20px;
+  }
+
+  .fa-book-open{
+    padding: 0 20px;
+  }
+
+  #title-play{
+    color: #FFF;
+    font-size: 20px;
+  }
+
+  .fa-plus-square{
+    font-size: 35px;
+    color: #FFF;
+    background-color: #000;
+    padding-right: 15px;
+  }
+
+  #crea{
+    display: flex;
+    align-items: center;
+  }
+
 }
