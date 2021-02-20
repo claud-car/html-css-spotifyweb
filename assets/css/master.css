@@ -13,25 +13,28 @@
 
 /* SIDEBAR */
 
+.container-sidebar{
+  height: calc(100vh - 80px);
+  position: relative;
+}
 
 .sidebar{
-  position: fixed;
-  z-index: 1;
+  /* position: fixed;
+  z-index: 1; */
   background-color: #000;
-  height: 100vh;
+  height: calc(100vh - 80px);
 }
 
 .fa-spotify{
   font-size: 35px;
   color: #FFF;
-  padding: 0 10px;
 }
 
 .brand{
   height: 50px;
   color: #FFF;
-  padding-top: 10px;
   margin-bottom: 10px;
+  padding:10px 0px;
 }
 
 .brand span{
@@ -45,7 +48,6 @@
   font-weight: 900;
   font-size: 30px;
   color: #808080;
-  padding: 0 10px;
 }
 
 .fa-search{
@@ -54,7 +56,6 @@
   font-weight: 800;
   font-size: 30px;
   color: #808080;
-  padding: 0 10px;
 }
 
 .fa-book-open{
@@ -63,7 +64,6 @@
   font-weight: 900;
   font-size: 30px;
   color: #808080;
-  padding: 0 10px;
 }
 
 .icons-sidebar{
@@ -83,44 +83,149 @@
   margin: 10px 0;
 }
 
+.menu-sidebar a:hover{
+  color: #FFF
+}
+
+.menu-sidebar:active{
+  border-left: 3px solid green;
+}
+
+.playlist ul li:hover{
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ft-side1 span:hover, .ft-side2 span:hover{
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .playlist{
+  display: none;
+  padding-left: 10px;
+}
+
+.footer-sidebar{
+  height: 30%;
+  padding-left: 10px;
+  position: absolute;
+  top: 100%;
+  transform: translate(0%, -35%);
+  width: 100%;
+}
+
+.fa-arrow-alt-circle-down{
+  color: #808080;
+  font-size: 15px;
+  padding-left: 5px;
+  margin-bottom: 20px;
+}
+
+.ft-side1{
+  display: flex;
+  align-items: center;
+}
+
+.ft-side2{
+  display: flex;
+  align-items: center;
+}
+
+.ft-side1 span{
+  color: #808080;
+  font-size: 15px;
   display: none;
 }
 
+.footer-sidebar hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10%;
+  display: none;
+}
+
+.ft-side2 span{
+  color: #FFF;
+  font-size: 18px;
+  display: none;
+}
+
+.fa-user-circle{
+  vertical-align: top;
+  padding-right: 5px;
+  font-size: 25px;
+  color: #FFF;
+}
+
 /* SIDEBAR */
+/* MAINPAGE */
 
 .main-page{
   background-color: lightblue;
-  width:100%;
   height: calc(100vh - 80px);
   overflow-y: scroll;
 }
 
 
+/* MAINPAGE */
+/* PLAYER-BAR */
 
 .player-bar{
   position: fixed;
-  z-index: 2;
-  background-color: red;
+  background-color: #282828;
   height: 80px;
   width: 100%;
   bottom: 0;
 }
 
+.left-part{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.left-part img{
+  width: 30px;
+  margin-right: 10px;
+}
+
+.left-part a:first-child{
+  color: #FFF;
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+.left-part a:last-child{
+  color: #808080;
+  font-size: 10px;
+}
+
+.left-part .fa-heart{
+  color: #808080;
+  vertical-align:text-top;
+  margin-left: 10px;
+}
+
+/* PLAYER-BAR */
+
 @media all and (min-width:768px){
 
   .fa-spotify{
     font-size: 45px;
+    padding-left: 20px;
   }
 
   .brand{
-    padding-bottom: 60px;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
   }
 
   .brand span{
     display:inline-block;
     font-size: 31px;
-    padding-right: 60px;
   }
 
   .icons-sidebar a{
@@ -134,18 +239,17 @@
   .playlist{
     display: inline-block;
     padding-left: 20px;
+    overflow-y: scroll;
+    width: 100%;
   }
 
   .playlist ul li{
     font-size: 16px;
-    /* color: #7a8592; */
     margin: 10px 0;
     color: #808080;
+
   }
 
-  .fa-spotify{
-    padding: 0 20px;
-  }
   .fa-home{
     padding: 0 20px;
   }
@@ -172,6 +276,44 @@
   #crea{
     display: flex;
     align-items: center;
+  }
+
+  .ft-side1 span{
+    display: inline-block;
+  }
+
+  .footer-sidebar hr{
+    display: block;
+  }
+
+  .ft-side2 span{
+    display: inline-block;
+  }
+
+  .fa-arrow-alt-circle-down{
+    margin-bottom: 0;
+    padding-right: 10px;
+  }
+
+  /* SIDEBAR */
+  /* PLAYER-BAR */
+
+  .left-part img{
+    width: 40px;
+  }
+
+  .left-part a:first-child{
+    font-size: 15px;
+  }
+
+  .left-part a:last-child{
+    font-size: 15px;
+  }
+
+  .left-part .fa-heart{
+    color: #808080;
+    vertical-align:text-top;
+    margin-left: 20px;
   }
 
 }
