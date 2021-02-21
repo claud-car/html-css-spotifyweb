@@ -19,8 +19,6 @@
 }
 
 .sidebar{
-  /* position: fixed;
-  z-index: 1; */
   background-color: #000;
   height: calc(100vh - 80px);
 }
@@ -109,12 +107,9 @@
 }
 
 .footer-sidebar{
-  height: 30%;
   padding-left: 10px;
-  position: absolute;
-  top: 100%;
-  transform: translate(0%, -35%);
-  width: 100%;
+  position: fixed;
+  bottom: 100px;
 }
 
 .fa-arrow-alt-circle-down{
@@ -209,6 +204,95 @@
   margin-left: 10px;
 }
 
+.central-part{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upper-player{
+  color: #FFF;
+  font-size: 12px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.fa-play-circle{
+  font-size: 30px;
+}
+
+.symb-18px{
+  font-size: 18px;
+}
+
+.symb-15px{
+  font-size: 15px;
+}
+
+.lower-player{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.lower-player span{
+  color: #FFF;
+  font-size: 10px;
+}
+
+.lower-player span:first-child{
+  padding-right: 20px;
+}
+
+.lower-player span:last-child{
+  padding-left: 8px;
+  padding-right: 12px;
+}
+
+
+.lower-player hr{
+  margin: 0;
+  border: 2px solid #FFF;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.right-part{
+  color: #FFF;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.right-part i{
+  padding-right: 15px;
+}
+
+.right-part hr{
+  margin: 0;
+  width: 100%;
+  border: 2px solid #FFF;
+  border-radius: 10px;
+}
+
+.left-part a:hover{
+  cursor: pointer;
+}
+
+.fa-heart:active{
+  color: green;
+}
+
+.central-part i:hover , hr:hover{
+  cursor: pointer;
+}
+
+.right-part i:hover , hr:hover{
+  cursor: pointer;
+}
+
 /* PLAYER-BAR */
 
 @media all and (min-width:768px){
@@ -239,7 +323,6 @@
   .playlist{
     display: inline-block;
     padding-left: 20px;
-    overflow-y: scroll;
     width: 100%;
   }
 
@@ -311,9 +394,41 @@
   }
 
   .left-part .fa-heart{
-    color: #808080;
     vertical-align:text-top;
     margin-left: 20px;
   }
 
+  .lower-player span:last-child{
+    padding-left: 20px;
+    padding-right: 8px;
+  }
+
+
+}
+
+@media all and (min-width:992px){
+
+  .upper-player{
+    justify-content: center;
+  }
+
+  .upper-player i{
+    padding: 0 10px;
+  }
+
+  .right-part{
+    padding-left: 5%;
+  }
+}
+
+@media all and (min-width:1200px){
+  .right-part{
+    padding-left: 10%;
+  }
+}
+
+@media all and (max-height: 690px){
+  .playlist{
+    overflow-y: scroll;
+  }
 }
