@@ -5,6 +5,7 @@
   font-family: 'PT Serif', serif;
 }
 
+
 /* UTILITY */
 
 
@@ -189,6 +190,28 @@
   padding-top: 100px;
 }
 
+.menu{
+  display: flex;
+  flex-flow: wrap;
+  color: #808080;
+  justify-content:center;
+}
+
+.menu h5{
+  margin: 15px 10px;
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+.menu h5:hover{
+  cursor: pointer;
+}
+
+.menu h5:active{
+  border-bottom: 1px solid green;
+}
+
+
 /* MAINPAGE */
 /* PLAYER-BAR */
 
@@ -354,7 +377,7 @@
     font-size: 16px;
     margin: 10px 0;
     color: #808080;
-
+    list-style: none;
   }
 
   .fa-home{
@@ -407,6 +430,12 @@
   }
 
   /* SIDEBAR */
+  /* MAIN-PAGE */
+
+  .menu h5{
+    font-size: 18px;
+  }
+
   /* PLAYER-BAR */
 
   .left-part img{
