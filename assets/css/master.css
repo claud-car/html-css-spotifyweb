@@ -440,16 +440,6 @@
   font-size: 10px;
 }
 
-/* .lower-player span:first-child{
-  padding-right: 8px;
-}
-
-.lower-player span:last-child{
-  padding-left: 8px;
-  padding-right: 12px;
-} */
-
-
 .lower-player hr{
   margin: 0 5px;
   border: 2px solid #FFF;
@@ -625,11 +615,6 @@
     vertical-align:text-top;
     margin-left: 20px;
   }
-
-  /* .lower-player span:last-child{
-    padding-left: 20px;
-    padding-right: 8px;
-  } */
 
   .symb-18px{
     display: inline-block;
