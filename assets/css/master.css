@@ -3,88 +3,86 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  /* font-family: 'PT Serif', serif; */
 }
-
 
 /* UTILITY */
 
-#airbourne{
+.airbourne{
   background-image: url(../img/airbourne.png);
   background-size: contain;
 }
 
-#brani-pref{
+.brani-pref{
   background-image: url(../img/brani-pref.png);
   background-size: contain;
 }
 
-#casey{
+.casey{
   background-image: url(../img/casey.png);
   background-size: contain;
 }
 
-#credence{
+.credence{
   background-image: url(../img/credence.png);
   background-size: contain;
 }
 
-#daily1{
+.daily1{
   background-image: url(../img/daily1.png);
   background-size: contain;
 }
 
-#daily2{
+.daily2{
   background-image: url(../img/daily2.png);
   background-size: contain;
 }
 
-#daily3{
+.daily3{
   background-image: url(../img/daily3.png);
   background-size: contain;
 }
 
-#daily4{
+.daily4{
   background-image: url(../img/daily4.png);
   background-size: contain;
 }
 
-#kiss{
+.kiss{
   background-image: url(../img/kiss.png);
   background-size: contain;
 }
 
-#lordi{
+.lordi{
   background-image: url(../img/lordi.png);
   background-size: contain;
 }
 
-#red-hot{
+.red-hot{
   background-image: url(../img/red-hot.png);
   background-size: contain;
 }
 
-#refused{
+.refused{
   background-image: url(../img/refused.png);
   background-size: contain;
 }
 
-#airbourne{
+.airbourne{
   background-image: url(../img/airbourne.png);
   background-size: contain;
 }
 
-#samurai{
+.samurai{
   background-image: url(../img/samurai.png);
   background-size: contain;
 }
 
-#slipknot{
+.slipknot{
   background-image: url(../img/slipknot.png);
   background-size: contain;
 }
 
-#turisas{
+.turisas{
   background-image: url(../img/turisas.png);
   background-size: contain;
 }
@@ -93,15 +91,12 @@
 
 /* TOP-BAR */
 
-
-
 /* TOP-BAR */
 
 /* SIDEBAR */
 
 .container-sidebar{
   height: calc(100vh - 80px);
-  position: relative;
 }
 
 .sidebar{
@@ -195,9 +190,9 @@
 }
 
 .footer-sidebar{
-  padding-left: 10px;
+  padding-left: 5px;
   position: fixed;
-  bottom: 100px;
+  bottom: 12%;
 }
 
 .fa-arrow-alt-circle-down{
